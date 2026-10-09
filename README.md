@@ -25,3 +25,5 @@ Counts apply to the decoded text after that codec's BOM handling. CRLF counts as
 Regular files only, max 8 MiB, sequential non-atomic read; use stable copies. Reports refuse overwrite, including the source. No file content copied into reports, but counts/encoding can still be private. No network, history, automatic repair or conversion. CLI exits 0 decoded, 1 decode failure, 2 input/output error. Root marker/version files opt in to store integration. The current public-only Pi App Store cannot discover private repositories; authenticated store support is not verified.
 
 16 tests cover BOM order, exact decoding, explicit overrides, BOM-less endian handling, newline styles, NULs, Unicode separators, source preservation, FIFO rejection and CLI. Linux tested; real Pi/non-Linux untested.
+
+Fullscreen update: Store interactive launch uses terminal-sized board cells or wrapped full-terminal utility input/results with PgUp/PgDn scrolling. Original core rules and direct CLI commands remain unchanged. Ctrl+C cancels utility entry, result Enter returns; no new dependency downloads. Linux PTY resize/restoration checked; physical Pi untested.
